@@ -1,0 +1,330 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,300,400,600);
+/* line 5, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "Entypo";
+  src: url(/fonts/entypo.eot);
+  src: url(/fonts/entypo.eot?#iefix) format('embedded-opentype'), url(/fonts/entypo.woff) format('woff'), url(/fonts/entypo.ttf) format('truetype'), url(/fonts/entypo.svg) format('svg');
+}
+/* line 35, ../../css/style.scss */
+body {
+  background: #111111;
+  font: 12px "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* line 42, ../../css/style.scss */
+#caption {
+  font-style: italic;
+}
+/* line 44, ../../css/style.scss */
+#caption #date {
+  color: #b3b3b3;
+}
+/* line 47, ../../css/style.scss */
+#caption #title {
+  color: #333333;
+}
+@media screen and (max-width: 920px) {
+  /* line 42, ../../css/style.scss */
+  #caption {
+    padding: 10px;
+    text-align: center;
+  }
+  /* line 53, ../../css/style.scss */
+  #caption div {
+    display: inline-block;
+  }
+  /* line 56, ../../css/style.scss */
+  #caption div + div {
+    padding-left: 5px;
+  }
+}
+@media screen and (min-width: 921px) {
+  /* line 42, ../../css/style.scss */
+  #caption {
+    border-top: 1px solid #cccccc;
+    margin: 15px;
+    padding-top: 15px;
+  }
+}
+
+/* line 67, ../../css/style.scss */
+#footer {
+  background: #FDFDFD;
+  bottom: 0px;
+  left: 0px;
+  position: fixed;
+}
+@media screen and (max-width: 920px) {
+  /* line 67, ../../css/style.scss */
+  #footer {
+    height: 44px;
+    right: 0px;
+  }
+}
+@media screen and (min-width: 921px) {
+  /* line 67, ../../css/style.scss */
+  #footer {
+    width: 200px;
+  }
+}
+
+/* line 81, ../../css/style.scss */
+#header {
+  padding: 15px;
+}
+/* line 85, ../../css/style.scss */
+#header a span.jon {
+  color: #333333;
+}
+/* line 88, ../../css/style.scss */
+#header a span.hewer {
+  color: #737373;
+}
+/* line 91, ../../css/style.scss */
+#header a span.photography {
+  color: #b3b3b3;
+}
+@media screen and (max-width: 920px) {
+  /* line 81, ../../css/style.scss */
+  #header {
+    height: 24px;
+    overflow: hidden;
+    *zoom: 1;
+  }
+  /* line 97, ../../css/style.scss */
+  #header a {
+    float: left;
+  }
+  /* line 100, ../../css/style.scss */
+  #header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    float: right;
+    outline: none;
+    padding: 3px 0px;
+  }
+  /* line 107, ../../css/style.scss */
+  #header button span.icon-bar {
+    background-color: #333333;
+    border-radius: 1px;
+    display: block;
+    height: 2px;
+    width: 22px;
+  }
+  /* line 114, ../../css/style.scss */
+  #header button span.icon-bar + span.icon-bar {
+    margin-top: 6px;
+  }
+}
+@media screen and (min-width: 921px) {
+  /* line 121, ../../css/style.scss */
+  #header button {
+    display: none;
+  }
+}
+
+/* line 127, ../../css/style.scss */
+#main {
+  position: fixed;
+  right: 0px;
+  z-index: -1;
+}
+@media screen and (max-width: 920px) {
+  /* line 127, ../../css/style.scss */
+  #main {
+    bottom: 44px;
+    left: 0px;
+    top: 54px;
+  }
+}
+@media screen and (min-width: 921px) {
+  /* line 127, ../../css/style.scss */
+  #main {
+    bottom: 0px;
+    left: 200px;
+    top: 0px;
+  }
+}
+
+/* line 143, ../../css/style.scss */
+ul#menu {
+  list-style-type: none;
+  margin-top: -20px;
+  padding: 15px;
+}
+/* line 147, ../../css/style.scss */
+ul#menu a {
+  font-size: 0.8em;
+}
+@media screen and (max-width: 920px) {
+  /* line 143, ../../css/style.scss */
+  ul#menu {
+    display: none;
+  }
+  /* line 152, ../../css/style.scss */
+  ul#menu.expand {
+    display: block;
+  }
+}
+
+/* line 158, ../../css/style.scss */
+#nav {
+  background: #FDFDFD;
+  color: #333333;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+}
+/* line 164, ../../css/style.scss */
+#nav a {
+  color: #333333;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* line 170, ../../css/style.scss */
+#nav a:active,
+#nav a:hover {
+  color: #F01616;
+}
+@media screen and (max-width: 920px) {
+  /* line 158, ../../css/style.scss */
+  #nav {
+    right: 0px;
+  }
+}
+@media screen and (min-width: 921px) {
+  /* line 158, ../../css/style.scss */
+  #nav {
+    bottom: 0px;
+    width: 200px;
+  }
+}
+
+/* line 183, ../../css/style.scss */
+#photo {
+  -moz-transition: opacity 1s ease-in;
+  -o-transition: opacity 1s ease-in;
+  -webkit-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
+}
+/* line 185, ../../css/style.scss */
+#photo.hidden {
+  opacity: 0;
+}
+/* line 188, ../../css/style.scss */
+#photo.visible {
+  opacity: 1;
+}
+
+/* line 193, ../../css/style.scss */
+#photo-container {
+  bottom: 15%;
+  left: 15%;
+  position: absolute;
+  right: 15%;
+  top: 15%;
+}
+
+/* line 203, ../../css/style.scss */
+#photo-nav {
+  font-family: "Entypo";
+}
+/* line 207, ../../css/style.scss */
+#photo-nav a {
+  color: #BBBBBB;
+  display: block;
+  font-size: 30px;
+  line-height: 1em;
+  margin-top: -15px;
+  position: absolute;
+  text-decoration: none;
+  top: 50%;
+}
+/* line 217, ../../css/style.scss */
+#photo-nav a#previous {
+  left: 20px;
+}
+/* line 220, ../../css/style.scss */
+#photo-nav a#next {
+  right: 20px;
+}
+/* line 223, ../../css/style.scss */
+#photo-nav a.disabled {
+  display: none;
+}
+/* line 226, ../../css/style.scss */
+#photo-nav a:active,
+#photo-nav a:hover {
+  color: #F01616;
+}
